@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Error - Student Payment Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+		}
+		
+		header {
+			background-color: #007bff;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		h1 {
+			margin: 0;
+			font-size: 32px;
+			font-weight: bold;
+		}
+		
+		section {
+			max-width: 1000px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+		
+		h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		
+		.button {
+			display: inline-block;
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: background-color 0.3s ease;
+		}
+		
+		.button:hover {
+			background-color: #0062cc;
+			color: #fff;
+		}
+		
+		footer {
+			background-color: #f7f7f7;
+			color: #333;
+			padding: 20px;
+			text-align: center;
+			font-size: 14px;
+			border-top: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Student Payment Website</h1>
+	</header>
+	
+	<section>
+		<h2>Error</h2>
+		<p>Sorry, an error has occurred while processing your request. Please try again later.</p>
+		<a th:href="@{/home}" class="button">Go back to homepage</a>
+	</section>
+	
+	<footer>
+		<p>&copy; 2023 Student Payment Website. All rights reserved.</p>
+	</footer>
+</body>
+</html>

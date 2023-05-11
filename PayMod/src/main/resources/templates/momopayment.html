@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Mobile Money Payment Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+	.body {
+		background-color: hwb(0 15% 35%);
+	}	
+		
+	.container {
+		margin: 0 auto;
+		width: 45%;
+		padding: 20px;
+		border: 2px solid #ccc;
+		background-color: #0479317c;
+		border-radius: 10px;
+		align-items: center;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	label {
+		display: block;
+		margin-top: 20px;
+		font-weight: bold;
+	}
+
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"],
+	select {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+
+	
+
+	
+
+	@media screen and (max-width: 480px) {
+		input[type="text"],
+		input[type="tel"],
+		input[type="email"],
+		select {
+			width: 100%;
+			margin-top: 0;
+		}
+	}
+
+	button {
+		padding: 10px;
+		background-color: #007bff;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		align-items: center;
+	}
+	button:hover {
+		background-color: #00b300;
+	}
+
+	</style>
+
+</head>
+
+<body>
+	<h1>Mobile Money Payment Form</h1>
+	<div class="container">	
+		<form action="#" method="post">
+			<label for="amount">Amount:</label>
+			<input type="text" id="amount" name="amount" placeholder="Enter amount in Kwacha">
+
+			<label for="number">Mobile Money Number:</label>
+			<input type="tel" id="number" name="number" placeholder="Enter mobile money number">
+
+			<label for="network">Mobile Money Network:</label>
+			<select id="network" name="network">
+				<option value="network1">MTN</.option>
+				<option value="network2">AIRTEL</option>
+				<option value="network3">ZAMTEL</option>
+			</select>
+
+			<label for="reference">Payment Reference:</label>
+			<input type="text" id="reference" name="reference" placeholder="Enter payment reference">
+
+			<label for="name">Full Name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter full name">
+
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email" placeholder="Enter email address">
+
+			<label for="contact">Contact Number:</label>
+			<input type="tel" id="contact" name="contact" placeholder="Enter contact number">
+
+			
+
+		</form>
+
+			
+		<button type="submit">Submit Payment</button>
+		
+	
+		
+	</div>
+</body>
+</html>
